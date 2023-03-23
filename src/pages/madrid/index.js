@@ -249,12 +249,10 @@ const index = ({
           nombreCiudad={ciudad.acf.ciudad_landing}
           telefono={ciudad.acf.telefono}
         />
-        {ciudad.acf.foto_1 !== "" ? <BannerPromoUno ciudad={ciudad} /> : ""}
+        {ciudad.acf.foto_1 !== "" ? <BannerPromoUno ciudad={ciudad} /> : null}
         {general.acf.foto_2 !== "" && ciudad.acf.foto_1 === "" ? (
           <BannerPromoDos general={general} />
-        ) : (
-          ""
-        )}
+        ) : null}
         <SeccionDos
           data={data}
           ciudad={ciudad}
