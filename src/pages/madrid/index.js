@@ -405,6 +405,6 @@ export async function getStaticProps() {
       tienda10Google,
       tienda11Google,
     },
-    revalidate: 11,
+    revalidate: 1,
   };
 }
