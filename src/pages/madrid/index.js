@@ -2,13 +2,14 @@ import Head from "next/head";
 import Layout from "@/componentes/Layout/Layout";
 import SeccionDos from "@/componentes/SeccionDos/SeccionDos";
 import SeccionUno from "@/componentes/SeccionUno/SeccionUno";
+import BannerPromoUno from "../../componentes/BannerPromoUno/BannerPromoUno";
+import BannerPromoDos from "../../componentes/BannerPromoDos/BannerPromoDos";
 import React from "react";
 import useSWR from "swr";
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 const index = ({
   ciudad,
-  //dataReverse,
-  //dataReverseVenta,
+  general,
   tienda1,
   tienda2,
   tienda3,
@@ -35,7 +36,10 @@ const index = ({
   const nombreCiudad = ciudad.acf.ciudad_oro;
   const { data } = useSWR(
     `https://quickgold.es/archivos-cache/Fixing${nombreCiudad}.txt`,
-    fetcher
+    fetcher,
+    {
+      refreshInterval: 300000,
+    }
   );
   const arrayTiendas = [
     {
@@ -245,9 +249,13 @@ const index = ({
           nombreCiudad={ciudad.acf.ciudad_landing}
           telefono={ciudad.acf.telefono}
         />
+        {ciudad.acf.foto_1 !== "" ? <BannerPromoUno ciudad={ciudad} /> : ""}
+        {general.acf.foto_2 !== "" && ciudad.acf.foto_1 === "" ? (
+          <BannerPromoDos general={general} />
+        ) : (
+          ""
+        )}
         <SeccionDos
-          //dataReverse={dataReverse}
-          //dataReverseVenta={dataReverseVenta}
           data={data}
           ciudad={ciudad}
           comprar={ciudad.acf.vende_divisa}
@@ -260,6 +268,7 @@ const index = ({
 
 export default index;
 const idPaginaWp = "468";
+const apiGeneral = "13848";
 //variables id de tiendas de la api de wordpress
 const id1 = "11108";
 const id2 = "6888";
@@ -280,21 +289,10 @@ export async function getStaticProps() {
   const ciudad = await madrid.json();
   //fin datos de los campos personalizados de la ciudad
   //datos para divisas y metales
-  /*const nombreCiudad = ciudad.acf.ciudad_oro;
-  const data = await fetch(
-    `https://quickgold.es/archivos-cache/Fixing${nombreCiudad}.txt`
+  const res = await fetch(
+    `https://quickgold.es/wp-json/acf/v3/pages/${apiGeneral}`
   );
-  const datos = await data.json();
-  const dataReverse1 = [...datos?.result?.Tarifas?.Divisas_Compra].reverse();
-  const dataReverseVenta1 = [
-    ...datos?.result?.Tarifas?.Divisas_Venta,
-  ].reverse();
-  const dataReverse = dataReverse1.filter(
-    (currency) => currency.Name !== "RUB" && currency.Name !== "HRK"
-  );
-  const dataReverseVenta = dataReverseVenta1.filter(
-    (currency) => currency.Name !== "RUB" && currency.Name !== "HRK"
-  );*/
+  const general = await res.json();
   //fin datos para divisas y metales
   //datos de los campos personalizados de tiendas
   const res1 = await fetch(`https://quickgold.es/wp-json/acf/v3/pages/${id1}`);
@@ -336,7 +334,7 @@ export async function getStaticProps() {
   const tienda_8 = tienda8.acf?.tienda;
   const tienda_9 = tienda9.acf?.tienda;
   const tienda_10 = tienda10.acf?.tienda;
-  const tienda_11 = tienda10.acf?.tienda;
+  const tienda_11 = tienda11.acf?.tienda;
   const google1 = await fetch(
     `https://quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-${tienda_1}.txt`
   );
@@ -385,8 +383,7 @@ export async function getStaticProps() {
   return {
     props: {
       ciudad,
-      //dataReverse,
-      //dataReverseVenta,
+      general,
       tienda1,
       tienda2,
       tienda3,
