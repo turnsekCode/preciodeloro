@@ -1,7 +1,18 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./conversor.module.css";
 
-const CalculadoraOro = ({ data, ciudad, loading }) => {
+const CalculadoraOro = ({ ciudad }) => {
+  const nombreCiudad = ciudad.acf.ciudad_oro;
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(null);
+  useEffect(() => {
+    fetch(`https://quickgold.es/archivos-cache/Fixing${nombreCiudad}.txt`)
+      .then((response) => response.json())
+      .then((response) => {
+        setData(response);
+        setLoading(true);
+      });
+  }, []);
   const [valorInput, setValorInput] = useState("0.00");
   const [valorSelect, setValorSelect] = useState("0.00");
   const [masDe, setMasDe] = useState(true);
