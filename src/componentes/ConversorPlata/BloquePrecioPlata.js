@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./conversor.module.css";
 
-const BloquePrecioPlata = ({ data, ciudad }) => {
+const BloquePrecioPlata = ({ data, ciudad, loading }) => {
   const precio999 =
     (data?.result?.Tarifas?.Plata[3].Productos[0].Precio).toFixed(2);
   const precio925 =
@@ -13,7 +13,6 @@ const BloquePrecioPlata = ({ data, ciudad }) => {
   const precio999Suma = parseFloat(precio999) + parseFloat(PrecioMasPlata);
   const precio925Suma = parseFloat(precio925) + parseFloat(PrecioMasPlata);
   const precio800Suma = parseFloat(precio800) + parseFloat(PrecioMasPlata);
-  console.log(precio999Suma);
   return (
     <div className={styles.contenedorPrecioPlata}>
       <div className={styles.contenedorBloqueSuperiorPlata}>
@@ -21,7 +20,7 @@ const BloquePrecioPlata = ({ data, ciudad }) => {
           <div className={styles.contenedorprecioDestacadoPlata}>
             <div className={styles.precioDestacadoPlata}>
               <p className={styles.masde}>Más de {masDePlata}kg</p>
-              {!data ? (
+              {!loading ? (
                 <p className={styles.precio18k}>Cargando</p>
               ) : (
                 <p className={styles.precio18k}>
@@ -34,7 +33,7 @@ const BloquePrecioPlata = ({ data, ciudad }) => {
           </div>
           <div className={styles.contenedorOtrosPrecios}>
             <div className={styles.OtrosPrecios}>
-              {!data ? (
+              {!loading ? (
                 <p className={styles.precio}>Cargando</p>
               ) : (
                 <p className={styles.precio}>
@@ -44,7 +43,7 @@ const BloquePrecioPlata = ({ data, ciudad }) => {
               <p className={styles.preciok}>925</p>
             </div>
             <div className={styles.OtrosPrecios}>
-              {!data ? (
+              {!loading ? (
                 <p className={styles.precio}>Cargando</p>
               ) : (
                 <p className={styles.precio}>

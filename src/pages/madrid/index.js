@@ -1,12 +1,13 @@
 import Head from "next/head";
+import { useState, useEffect } from "react";
 import Layout from "@/componentes/Layout/Layout";
 import SeccionDos from "@/componentes/SeccionDos/SeccionDos";
 import SeccionUno from "@/componentes/SeccionUno/SeccionUno";
 import BannerPromoUno from "../../componentes/BannerPromoUno/BannerPromoUno";
 import BannerPromoDos from "../../componentes/BannerPromoDos/BannerPromoDos";
 import React from "react";
-import useSWR from "swr";
-const fetcher = (...args) => fetch(...args).then((res) => res.json());
+//import useSWR from "swr";
+//const fetcher = (...args) => fetch(...args).then((res) => res.json());
 const index = ({
   ciudad,
   general,
@@ -34,13 +35,24 @@ const index = ({
   tienda11Google,
 }) => {
   const nombreCiudad = ciudad.acf.ciudad_oro;
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(null);
+  useEffect(() => {
+    fetch(`https://quickgold.es/archivos-cache/Fixing${nombreCiudad}.txt`)
+      .then((response) => response.json())
+      .then((response) => {
+        setData(response);
+        setLoading(true);
+      });
+  }, []);
+  /*const nombreCiudad = ciudad.acf.ciudad_oro;
   const { data } = useSWR(
     `https://quickgold.es/archivos-cache/Fixing${nombreCiudad}.txt`,
     fetcher,
     {
       refreshInterval: 300000,
     }
-  );
+  );*/
   const arrayTiendas = [
     {
       id: 1,
@@ -255,8 +267,8 @@ const index = ({
         ) : null}
         <SeccionDos
           data={data}
+          loading={loading}
           ciudad={ciudad}
-          comprar={ciudad?.acf?.vende_divisa}
           arrayTiendas={arrayTiendas}
         />
       </Layout>

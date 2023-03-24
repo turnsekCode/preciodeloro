@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./conversor.module.css";
 
-const CalculadoraOro = ({ data, ciudad }) => {
+const CalculadoraOro = ({ data, ciudad, loading }) => {
   const [valorInput, setValorInput] = useState("0.00");
   const [valorSelect, setValorSelect] = useState("0.00");
   const [masDe, setMasDe] = useState(true);
@@ -49,7 +49,7 @@ const CalculadoraOro = ({ data, ciudad }) => {
             <div className={styles.contenedorprecioDestacado}>
               <div className={styles.precioDestacado}>
                 <p className={styles.masde}>Más de {paraMasOro}g</p>
-                {!data ? (
+                {!loading ? (
                   <p className={styles.precio18k}>Cargando</p>
                 ) : (
                   <p className={styles.precio18k}>
@@ -62,7 +62,7 @@ const CalculadoraOro = ({ data, ciudad }) => {
             </div>
             <div className={styles.contenedorOtrosPrecios}>
               <div className={styles.OtrosPrecios}>
-                {!data ? (
+                {!loading ? (
                   <p className={styles.precio}>Cargando</p>
                 ) : (
                   <p className={styles.precio}>
@@ -72,7 +72,7 @@ const CalculadoraOro = ({ data, ciudad }) => {
                 <p className={styles.preciok}>24K</p>
               </div>
               <div className={styles.OtrosPrecios}>
-                {!data ? (
+                {!loading ? (
                   <p className={styles.precio}>Cargando</p>
                 ) : (
                   <p className={styles.precio}>
