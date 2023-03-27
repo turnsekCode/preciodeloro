@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useState, useEffect } from "react";
 import Layout from "@/componentes/Layout/Layout";
 import SeccionDos from "@/componentes/SeccionDos/SeccionDos";
 import SeccionUno from "@/componentes/SeccionUno/SeccionUno";
@@ -40,6 +41,19 @@ const index = ({
       refreshInterval: 300000,
     }
   );*/
+  const nombreCiudad = ciudad.acf.ciudad_oro;
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(null);
+  useEffect(() => {
+    fetch(`https://quickgold.es/archivos-cache/Fixing${nombreCiudad}.txt`, {
+      cache: "no-cache",
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        setData(response);
+        setLoading(true);
+      });
+  }, []);
   const arrayTiendas = [
     {
       id: 1,
@@ -252,7 +266,12 @@ const index = ({
         {general?.acf?.foto_2 !== "" && ciudad?.acf?.foto_1 === "" ? (
           <BannerPromoDos general={general} />
         ) : null}
-        <SeccionDos ciudad={ciudad} arrayTiendas={arrayTiendas} />
+        <SeccionDos
+          ciudad={ciudad}
+          arrayTiendas={arrayTiendas}
+          data={data}
+          loading={loading}
+        />
       </Layout>
     </>
   );

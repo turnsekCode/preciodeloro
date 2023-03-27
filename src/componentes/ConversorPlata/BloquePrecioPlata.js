@@ -1,18 +1,6 @@
-import { useState, useEffect } from "react";
 import styles from "./conversor.module.css";
 
-const BloquePrecioPlata = ({ ciudad }) => {
-  const nombreCiudad = ciudad.acf.ciudad_oro;
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(null);
-  useEffect(() => {
-    fetch(`https://quickgold.es/archivos-cache/Fixing${nombreCiudad}.txt`)
-      .then((response) => response.json())
-      .then((response) => {
-        setData(response);
-        setLoading(true);
-      });
-  }, []);
+const BloquePrecioPlata = ({ ciudad, data, loading }) => {
   const precio999 =
     (data?.result?.Tarifas?.Plata[3].Productos[0].Precio).toFixed(2);
   const precio925 =

@@ -5,7 +5,7 @@ import logoPlata from "../../../public/assets/logoPlata.png";
 import CalculadoraOro from "./CalculadoraOro";
 import BloquePrecioPlata from "./BloquePrecioPlata";
 
-const Conversor = ({ ciudad }) => {
+const Conversor = ({ ciudad, data, loading }) => {
   return (
     <div className={styles.contenedorConversorBanderas}>
       <div className={styles.contenedorConversor}>
@@ -16,7 +16,7 @@ const Conversor = ({ ciudad }) => {
             <p>¿Cuánto cuesta ahora el oro?</p>
           </div>
         </div>
-        <CalculadoraOro ciudad={ciudad} />
+        <CalculadoraOro ciudad={ciudad} data={data} loading={loading} />
       </div>
       <div className={styles.contenedorConversor}>
         <div className={styles.conversorTitulo}>
@@ -26,7 +26,7 @@ const Conversor = ({ ciudad }) => {
             <p>¿Cuánto cuesta ahora la plata?</p>
           </div>
         </div>
-        <BloquePrecioPlata ciudad={ciudad} />
+        <BloquePrecioPlata ciudad={ciudad} data={data} loading={loading} />
       </div>
     </div>
   );
