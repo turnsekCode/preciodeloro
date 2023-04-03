@@ -101,7 +101,12 @@ const BloquePrecioPlata = ({ ciudad, data, loading }) => {
       <p className={styles.promocion}>
         <span className={styles.linea}>Promoción Online</span>
       </p>
-      <a className={styles.botonLlamarTienda}>LLAMA GRATIS AL 900 373 629</a>
+      <a
+        className={styles.botonLlamarTienda}
+        href={`tel:${ciudad?.acf?.telefono}`}
+      >
+        LLAMA GRATIS AL {ciudad?.acf?.telefono}
+      </a>
     </div>
   );
 };
