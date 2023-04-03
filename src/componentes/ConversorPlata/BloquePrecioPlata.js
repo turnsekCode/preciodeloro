@@ -36,7 +36,8 @@ const BloquePrecioPlata = ({ ciudad, data, loading }) => {
                 <p className={styles.precio}>Cargando</p>
               ) : (
                 <p className={styles.precio}>
-                  {precio925Suma} <span>€/kg</span>
+                  {precio925Suma}
+                  <span>€/kg</span>
                 </p>
               )}
               <p className={styles.preciok}>925</p>
@@ -46,7 +47,8 @@ const BloquePrecioPlata = ({ ciudad, data, loading }) => {
                 <p className={styles.precio}>Cargando</p>
               ) : (
                 <p className={styles.precio}>
-                  {precio800Suma} <span>€/kg</span>
+                  {precio800Suma}
+                  <span>€/kg</span>
                 </p>
               )}
               <p className={styles.preciok}>800</p>
@@ -76,7 +78,8 @@ const BloquePrecioPlata = ({ ciudad, data, loading }) => {
                 <p className={styles.precio}>Cargando</p>
               ) : (
                 <p className={styles.precio}>
-                  {precio925} <span>€/kg</span>
+                  {precio925}
+                  <span>€/kg</span>
                 </p>
               )}
               <p className={styles.preciok}>925</p>
@@ -86,7 +89,8 @@ const BloquePrecioPlata = ({ ciudad, data, loading }) => {
                 <p className={styles.precio}>Cargando</p>
               ) : (
                 <p className={styles.precio}>
-                  {precio800} <span>€/kg</span>
+                  {precio800}
+                  <span>€/kg</span>
                 </p>
               )}
               <p className={styles.preciok}>800</p>

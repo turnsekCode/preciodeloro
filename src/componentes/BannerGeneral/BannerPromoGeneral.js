@@ -1,21 +1,21 @@
 import React from "react";
 import styles from "./bannerPromoDos.module.css";
 
-const BannerPromoDos = ({ general }) => {
+const BannerPromoGeneral = ({ general }) => {
   return (
     <div className={styles.contenedorBannerUno}>
       <img
         className={styles.bannerDesktop}
-        src={general?.acf?.imagen_preciodeloro_desktop}
-        alt="Banner dos"
+        src={general?.acf?.imagen_general_desktop}
+        alt="Banner general"
       />
       <img
         className={styles.bannerMobil}
         src={general?.acf?.imagen_preciodeloro_mobil}
-        alt="Banner udos mobil"
+        alt="Banner general mobil"
       />
     </div>
   );
 };
 
-export default BannerPromoDos;
+export default BannerPromoGeneral;

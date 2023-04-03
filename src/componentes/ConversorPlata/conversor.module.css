@@ -126,7 +126,7 @@
 }
 .precio18k span{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 33px;
     color: #FFFFFF;
 }
@@ -146,7 +146,7 @@
 .OtrosPrecios{
     background: rgba(33, 62, 88, 0.2);
     border-radius: 2px;
-    width: 80px;
+    width: 85px;
     height: 47px;
     display: flex;
     flex-direction: column;
@@ -162,7 +162,7 @@
 }
 .OtrosPrecios p span{
     font-weight: 400;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 16px;
     text-align: center;
     color: #FFFFFF;

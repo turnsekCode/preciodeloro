@@ -298,7 +298,7 @@ const index = ({
 };
 
 export default index;
-const idPaginaWp = "468";
+const idPaginaWp = "5050";
 const apiGeneral = "13848";
 //variables id de tiendas de la api de wordpress
 const id1 = "11108";
