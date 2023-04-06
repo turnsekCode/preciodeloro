@@ -26,11 +26,12 @@ const index = ({ ciudad, tiendaGoogle, general }) => {
     <>
       <Head>
         <title>
-          Reserva tu lingote de oro en {ciudad.acf.ciudad_landing} | Quickgold
+          El mejor precio del oro en {ciudad.acf.ciudad_landing} lo tienes aquí
+          | Quickgold
         </title>
         <meta
           name="description"
-          content={`Conoce el precio por gramo de oro de ${ciudad.acf.ciudad_landing}. Reserva tu lingote de oro con el mejor servicio garantizado`}
+          content={`Conoce el precio por gramo de oro de ${ciudad.acf.ciudad_landing}. Obtén la mejor tasación por tus joyas de oro con el mejor servicio garantizado`}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="../../../assets/icon.png" />
