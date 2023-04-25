@@ -13,7 +13,7 @@ const Conversor = ({ ciudad, data, loading }) => {
           <Image src={logoOro} width={50} height={50} alt="Logo Oro" />
           <div className={styles.conversorTexto}>
             <h2>Precio del Oro</h2>
-            <p>¿Cuánto cuesta ahora el oro?</p>
+            <p>Conoce el precio del oro</p>
           </div>
         </div>
         <CalculadoraOro ciudad={ciudad} data={data} loading={loading} />
@@ -23,7 +23,7 @@ const Conversor = ({ ciudad, data, loading }) => {
           <Image src={logoPlata} width={50} height={50} alt="Logo Plata" />
           <div className={styles.conversorTexto}>
             <h2>Precio de la Plata</h2>
-            <p>¿Cuánto cuesta ahora la plata?</p>
+            <p>Conoce el precio de la plata</p>
           </div>
         </div>
         <BloquePrecioPlata ciudad={ciudad} data={data} loading={loading} />

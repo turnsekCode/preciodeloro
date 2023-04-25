@@ -118,7 +118,7 @@ const CalculadoraOro = ({ ciudad, data, loading }) => {
         </h2>
         <div className={styles.contenedorSelect}>
           <div className={styles.Select}>
-            <p>Seleccione kilates</p>
+            <p>Selecciona kilates</p>
             <select
               onChange={(e) => {
                 setValorSelect(e.target.value);
@@ -141,7 +141,7 @@ const CalculadoraOro = ({ ciudad, data, loading }) => {
             <span>g</span>
           </div>
         </div>
-        <p className={styles.tituloInferior}>Te daremos por tu oro</p>
+        <p className={styles.tituloInferior}>TE DAMOS POR TU ORO</p>
         <p className={styles.precioFinal}>
           {valorInput > parseFloat(paraMasOro)
             ? (valorInput * valorSelectSuma).toLocaleString()
