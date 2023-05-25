@@ -248,7 +248,7 @@ const index = ({
     <>
       <Head>
         <title>
-          El mejor precio del oro en {ciudad.acf.ciudad_landing} lo tienes aquí
+          El mejor precio del oroO en {ciudad.acf.ciudad_landing} lo tienes aquí
           | Quickgold
         </title>
         <meta
