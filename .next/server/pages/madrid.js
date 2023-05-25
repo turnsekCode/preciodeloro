@@ -250,7 +250,7 @@ const index = ({ ciudad , general , tienda1 , tienda2 , tienda3 , tienda4 , tien
                 children: [
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("title", {
                         children: [
-                            "El mejor precio del oroO en ",
+                            "El mejor precio del oro en ",
                             ciudad.acf.ciudad_landing,
                             " lo tienes aqu\xed | Quickgold"
                         ]
