@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/IIK9iwaJZ7bic3VvXqNth/_buildManifest.js",
-    "static/IIK9iwaJZ7bic3VvXqNth/_ssgManifest.js"
+    "static/vDv7KYh3yYB8HDWsE7Y74/_buildManifest.js",
+    "static/vDv7KYh3yYB8HDWsE7Y74/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -567,6 +567,16 @@
       "static/chunks/6921-abc0aafe26109d97.js",
       "static/css/1736fe2409c373a4.css",
       "static/chunks/pages/santacruz-b0d01d6a06116ea3.js"
+    ],
+    "/santadria": [
+      "static/chunks/webpack-3287f8a5350ca93d.js",
+      "static/chunks/framework-3671d8951bf44e4e.js",
+      "static/chunks/main-5113a160e7884232.js",
+      "static/chunks/959-e2d6a077ca8484be.js",
+      "static/chunks/4561-66e07b6ab89eee96.js",
+      "static/chunks/6921-abc0aafe26109d97.js",
+      "static/css/1736fe2409c373a4.css",
+      "static/chunks/pages/santadria-cbbf7e42f174517a.js"
     ],
     "/santander": [
       "static/chunks/webpack-3287f8a5350ca93d.js",
