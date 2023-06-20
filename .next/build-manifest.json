@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/vDv7KYh3yYB8HDWsE7Y74/_buildManifest.js",
-    "static/vDv7KYh3yYB8HDWsE7Y74/_ssgManifest.js"
+    "static/BF9Hs9LsbQAYMY8kjM5r6/_buildManifest.js",
+    "static/BF9Hs9LsbQAYMY8kjM5r6/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -436,6 +436,16 @@
       "static/chunks/6921-abc0aafe26109d97.js",
       "static/css/1736fe2409c373a4.css",
       "static/chunks/pages/nervion-2c00e84df126a82b.js"
+    ],
+    "/oviedo": [
+      "static/chunks/webpack-3287f8a5350ca93d.js",
+      "static/chunks/framework-3671d8951bf44e4e.js",
+      "static/chunks/main-5113a160e7884232.js",
+      "static/chunks/959-e2d6a077ca8484be.js",
+      "static/chunks/4561-66e07b6ab89eee96.js",
+      "static/chunks/6921-abc0aafe26109d97.js",
+      "static/css/1736fe2409c373a4.css",
+      "static/chunks/pages/oviedo-309202570220ee9a.js"
     ],
     "/palma": [
       "static/chunks/webpack-3287f8a5350ca93d.js",
