@@ -567,14 +567,15 @@ const CalculadoraOro = ({ ciudad , data , loading  })=>{
                         className: (conversor_module_default()).tituloInferior,
                         children: "TE DAMOS POR TU ORO"
                     }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
                         className: (conversor_module_default()).precioFinal,
-                        children: [
-                            valorInput > parseFloat(paraMasOro) ? (valorInput * valorSelectSuma).toLocaleString() : (valorInput * valorSelectNormal).toLocaleString(),
-                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                children: "€"
-                            })
-                        ]
+                        children: valorInput > parseFloat(paraMasOro) ? (valorInput * valorSelectSuma).toLocaleString("es", {
+                            style: "currency",
+                            currency: "EUR"
+                        }) : (valorInput * valorSelectNormal).toLocaleString("es", {
+                            style: "currency",
+                            currency: "EUR"
+                        })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                         className: (conversor_module_default()).promocion,
