@@ -1,0 +1,90 @@
+.contenedorAccordion{
+    border-radius: 12px;
+    background: #0F2D45;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.tituloServicio{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33px;
+    color: #FFFFFF;
+    width: 100%;
+    transition: 0.3s;
+    font-family: 'Gotham Black';
+}
+.subTituloServicio{
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.contenedorTituloServicio{
+    margin: 0px;
+}
+.accordionActivo{
+    font-size: 25px;
+}
+
+.details{
+    height: auto;
+}
+.rayaAdorno{
+    margin: 0 auto;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+.details{
+    border-bottom: 2px solid #fff;
+    padding: 15px 0!important;
+}
+.textoMenos {
+    font-family: 'Gotham Thin';
+}
+@media (min-width: 610px) {
+    .contenedorAccordion {
+            border-radius: 12px;
+            background: #0F2D45;
+            width: 480px;
+            height: 855px;
+        }
+    
+        .tituloServicio {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 33px;
+            color: #FFFFFF;
+            width: 100%;
+            transition: 0.3s;
+        }
+    
+        .subTituloServicio {
+            font-weight: 100;
+            font-size: 13px;
+            line-height: 15px;
+            color: #FFFFFF;
+        }
+    
+        .contenedorTituloServicio {
+            margin: 0px;
+        }
+    
+        .accordionActivo {
+            font-size: 25px;
+        }
+        .rayaAdorno {
+            margin: 0 auto;
+            display: block;
+            border-bottom: 1px solid #fff;
+        }
+    
+        .details {
+            border-bottom: 2px solid #fff;
+            padding: 15px 0!important;
+            height: auto;
+        }
+        .textoMenos {
+            font-family: 'Gotham Thin';
+        }
+}
