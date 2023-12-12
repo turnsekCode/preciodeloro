@@ -66,7 +66,7 @@ const CalculadoraOro = ({ ciudad }) => {
               <div className={styles.precioDestacado}>
                 <p className={styles.kilates}>18K</p>
                 {!loading ? (
-                  <p className={styles.precio18k}>Cargando</p>
+                  <p className={styles.precio18kCargando}>Cargando...</p>
                 ) : (
                   <p className={styles.precio18k}>
                     {precioMas18k}
@@ -79,7 +79,7 @@ const CalculadoraOro = ({ ciudad }) => {
               <div className={styles.OtrosPrecios}>
                 <p className={styles.preciok}>24K</p>
                 {!loading ? (
-                  <p className={styles.precio}>Cargando</p>
+                  <p className={styles.precioCargando}>Cargando..</p>
                 ) : (
                   <p className={styles.precio}>
                     {precioMas24k} <span>€/g</span>
@@ -89,7 +89,7 @@ const CalculadoraOro = ({ ciudad }) => {
               <div className={styles.OtrosPrecios}>
                 <p className={styles.preciok}>14K</p>
                 {!loading ? (
-                  <p className={styles.precio}>Cargando</p>
+                  <p className={styles.precioCargando}>Cargando..</p>
                 ) : (
                   <p className={styles.precio}>
                     {precioMas14k} <span>€/g</span>

@@ -265,8 +265,8 @@ const CalculadoraOro = ({ ciudad  })=>{
                                             children: "18K"
                                         }),
                                         !loading ? /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                            className: (conversor_module_default()).precio18k,
-                                            children: "Cargando"
+                                            className: (conversor_module_default()).precio18kCargando,
+                                            children: "Cargando..."
                                         }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                                             className: (conversor_module_default()).precio18k,
                                             children: [
@@ -290,8 +290,8 @@ const CalculadoraOro = ({ ciudad  })=>{
                                                 children: "24K"
                                             }),
                                             !loading ? /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: (conversor_module_default()).precio,
-                                                children: "Cargando"
+                                                className: (conversor_module_default()).precioCargando,
+                                                children: "Cargando.."
                                             }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                                                 className: (conversor_module_default()).precio,
                                                 children: [
@@ -312,8 +312,8 @@ const CalculadoraOro = ({ ciudad  })=>{
                                                 children: "14K"
                                             }),
                                             !loading ? /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: (conversor_module_default()).precio,
-                                                children: "Cargando"
+                                                className: (conversor_module_default()).precioCargando,
+                                                children: "Cargando.."
                                             }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                                                 className: (conversor_module_default()).precio,
                                                 children: [
