@@ -1,0 +1,560 @@
+.contenedorConversor {
+    width: 505px;
+    height: 944px;
+    background: #0692D0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor{
+    margin-top: 25px;
+}
+.conversorTitulo {
+    display: flex;
+    gap: 15px;
+}
+.conversorTexto p {
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.conversorTexto h2 {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+.botonLlamarTienda {
+    background: #E83C82;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    align-items: center;
+    text-align: center;
+    padding: 13px 15px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    width: 100%;
+    margin-top: 30px;
+    display: block;
+    font-family: 'Gotham Bold';
+}
+.contenedorAmbosBloquesEmpeno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedorBloqueEmpeno {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 0;
+    padding: 30px 20px;
+}
+.contenedorBloqueEmpeno h3 {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 37px;
+    text-align: center;
+    color: #0F2D45;
+    padding: 0;
+    margin-bottom: 20px;
+    font-family: 'Gotham Black';
+}
+.contenedorBloqueEmpeno h3 span {
+    font-family: 'Gotham Bold';
+}
+.contenedorTresBloques {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.contenedorBloques {
+    display: flex;
+    border-radius: 2px;
+    height: 40px;
+}
+.bloqueIzq {
+    width: 30%;
+    border-radius: 2px;
+    border: 1px solid #0F2D45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bloqueIzq p {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 14px;
+    color: #0F2D45;
+}
+.bloqueDer {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #0F2D45;
+    padding-left: 20px;
+}
+.bloqueDer p {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    color: #0F2D45;
+}
+.contenedorImagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.contenedorPrecioOro {
+    width: 290px;
+    height: 260px;
+    ;
+    background: linear-gradient(180deg, #1864A8 0%, rgba(24, 100, 168, 0) 100%);
+    border-radius: 8px;
+    padding: 10px;
+}
+.contenedorPrecioPlata {
+    width: 290px;
+    height: 170px;
+    background: linear-gradient(180deg, #1864A8 0%, rgba(24, 100, 168, 0) 100%);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.contenedorBloqueMasDe h4 {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.contenedorBloqueMasDe h4 span {
+    font-weight: 500;
+}
+.contenedorPrecios {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.precios {
+    width: 85px;
+    height: 47px;
+    background: rgba(33, 62, 88, 0.2);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.precios p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.precios p span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.precios span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+/*estilos info*/
+.contenedorInfo {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 25px;
+    padding: 20px 15px;
+}
+.primerParrafo span {
+    font-weight: bold;
+    margin: 0 4px;
+}
+.contenedorInfo h5 {
+    color: #0F2D45;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: 'Gotham Bold';
+}
+.segundoParrafo {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #213E58;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.segundoParrafo span {
+    font-family: 'Gotham Bold';
+    margin-left: 4px;
+}
+.ejemplo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.primerParrafo {
+    color: #0F2D45;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.tercerParrafo {
+    color: #0692D0;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 20px;
+}
+.cuartoParrafo {
+    color: #0F2D45;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.contenedorBotonLlamar {
+    width: 271px;
+    margin: 0 auto;
+}
+.preciosDelOro {
+    color: #0F2D45;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-family: 'Gotham Bold';
+    line-height: normal;
+    padding: 0 40px;
+    margin-bottom: 15px;
+}
+.contenedorBotones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.botonUno,
+.botonDos {
+    border-radius: 2px;
+    background: #FFF;
+    width: 130px;
+    height: 42px;
+    padding: 5px;
+    color: #B6CFE9;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    border: none;
+}
+.botonActivo {
+    background: #0093CA;
+    color: #fff;
+}
+
+@media (min-width: 1061px) {
+.contenedorConversor {
+        width: 505px;
+        height: 944px;
+        background: #0692D0;
+        border-radius: 8px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor {
+        margin-top: 25px;
+    }
+    .conversorTitulo {
+        display: flex;
+        gap: 15px;
+    }
+    .conversorTexto p {
+        font-weight: 100;
+        font-size: 13px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    .conversorTexto h2 {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 37px;
+        color: #FFFFFF;
+    }
+    .botonLlamarTienda {
+        background: #E83C82;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        align-items: center;
+        text-align: center;
+        padding: 13px 15px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        color: #FFFFFF;
+        width: 100%;
+        margin-top: 30px;
+        display: block;
+    }
+.contenedorAmbosBloquesEmpeno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedorBloqueEmpeno {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 0;
+    padding: 30px 20px;
+}
+.contenedorBloqueEmpeno h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #0F2D45;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.contenedorBloqueEmpeno h3 span {
+    font-weight: 700;
+}
+.contenedorTresBloques {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.contenedorBloques {
+    display: flex;
+    border-radius: 2px;
+    height: 40px;
+}
+.bloqueIzq {
+    width: 30%;
+    border-radius: 2px;
+    border: 1px solid #0F2D45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bloqueIzq p {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 14px;
+    color: #0F2D45;
+}
+.bloqueDer {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #0F2D45;
+    padding-left: 20px;
+}
+.bloqueDer p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    color: #0F2D45;
+}
+.contenedorImagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.contenedorPrecioOro {
+    width: 290px;
+    height: 260px;
+    ;
+    background: linear-gradient(180deg, #1864A8 0%, rgba(24, 100, 168, 0) 100%);
+    border-radius: 8px;
+    padding: 10px;
+}
+.contenedorPrecioPlata {
+    width: 290px;
+    height: 170px;
+    background: linear-gradient(180deg, #1864A8 0%, rgba(24, 100, 168, 0) 100%);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.contenedorBloqueMasDe h4 {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.contenedorBloqueMasDe h4 span {
+    font-weight: 500;
+}
+.contenedorPrecios {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.precios {
+    width: 85px;
+    height: 47px;
+    background: rgba(33, 62, 88, 0.2);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.precios p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.precios p span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.precios span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+/*estilos info*/
+.contenedorInfo {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 25px;
+    padding: 30px;
+}
+.contenedorInfo h5 {
+    color: #0F2D45;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+.segundoParrafo {
+    color: #0F2D45;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0 40px;
+}
+.segundoParrafo span {
+    font-weight: 700;
+    margin-left: 4px;
+}
+.ejemplo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.primerParrafo {
+    color: #0F2D45;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.tercerParrafo {
+    color: #0692D0;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 20px;
+}
+.cuartoParrafo {
+    color: #0F2D45;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.contenedorBotonLlamar {
+    width: 271px;
+    margin: 0 auto;
+}
+.preciosDelOro{
+    color: #0F2D45;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-family: 'Gotham Bold';
+    line-height: normal;
+    padding: 0 105px;
+    margin-bottom: 15px;
+}
+.contenedorBotones{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.botonUno, .botonDos{
+    border-radius: 2px;
+    background: #FFF;
+    width: 130px;
+    height: 42px;
+    padding: 5px;
+    color: #B6CFE9;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    border: none;
+}
+.botonActivo{
+    background: #0093CA;
+    color: #fff;
+}
+}

@@ -7,6 +7,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import styles from "./accordion.module.css";
 import CalculadoraOro from "../ConversorPlata/CalculadoraOro";
 import BloquePrecioPlata from "../ConversorPlata/BloquePrecioPlata";
+import Empenos from "../BloqueInfo/Empenos";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -142,6 +143,49 @@ export default function AccordionServicios({ ciudad }) {
           </AccordionSummary>
           <AccordionDetails className={styles.details}>
             <BloquePrecioPlata ciudad={ciudad} />
+          </AccordionDetails>
+        </Accordion>
+      </section>
+      <section>
+        <Accordion
+          style={{
+            background: "#0F2D45",
+            borderRadius: "8px",
+            border: "none",
+            padding: "10px 20px 0 20px",
+          }}
+          className={styles.contendorAccordion4}
+          expanded={expanded === "panel4"}
+          onChange={handleChange("panel4")}
+        >
+          <AccordionSummary
+            style={{
+              padding: "0",
+              borderBottom: "2px solid #fff",
+            }}
+            aria-controls="panel4d-content"
+            id="panel4d-header"
+          >
+            <div className={styles.contenedorTituloServicio}>
+              {" "}
+              <h1
+                className={
+                  expanded === "panel4"
+                    ? `${styles.tituloServicio} ${styles.accordionActivo}`
+                    : `${styles.tituloServicio}`
+                }
+              >
+                Empeño de joyas
+              </h1>
+              <h2 className={styles.subTituloServicio}>
+                Nuestros <strong>empeños sin interés el primer mes</strong>{" "}
+                hacen que empeñar oro sea mucho más cómodo y fácil para nuestros
+                clientes.
+              </h2>
+            </div>
+          </AccordionSummary>
+          <AccordionDetails className={styles.details}>
+            <Empenos ciudad={ciudad} />
           </AccordionDetails>
         </Accordion>
       </section>

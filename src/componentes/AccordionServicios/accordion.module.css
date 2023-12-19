@@ -47,7 +47,7 @@
             border-radius: 12px;
             background: #0F2D45;
             width: 480px;
-            height: 855px;
+            height: auto;
         }
     
         .tituloServicio {

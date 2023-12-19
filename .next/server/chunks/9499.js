@@ -351,8 +351,8 @@ const SeccionTres = ({ tiendaGoogle , ciudad  })=>{
 };
 /* harmony default export */ const BloqueInfoTienda = (SeccionTres);
 
-// EXTERNAL MODULE: ./src/componentes/AccordionServicios/AccordionServicios.js + 2 modules
-var AccordionServicios = __webpack_require__(1347);
+// EXTERNAL MODULE: ./src/componentes/AccordionServicios/AccordionServicios.js + 3 modules
+var AccordionServicios = __webpack_require__(9647);
 // EXTERNAL MODULE: ./src/componentes/SeccionTres/seccionDos.module.css
 var seccionDos_module = __webpack_require__(700);
 var seccionDos_module_default = /*#__PURE__*/__webpack_require__.n(seccionDos_module);

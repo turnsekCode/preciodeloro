@@ -357,8 +357,8 @@ const ListadoTiendas = ({ markers  })=>{
 // EXTERNAL MODULE: ./src/componentes/SeccionDos/seccionDos.module.css
 var seccionDos_module = __webpack_require__(1599);
 var seccionDos_module_default = /*#__PURE__*/__webpack_require__.n(seccionDos_module);
-// EXTERNAL MODULE: ./src/componentes/AccordionServicios/AccordionServicios.js + 2 modules
-var AccordionServicios = __webpack_require__(1347);
+// EXTERNAL MODULE: ./src/componentes/AccordionServicios/AccordionServicios.js + 3 modules
+var AccordionServicios = __webpack_require__(9647);
 ;// CONCATENATED MODULE: ./src/componentes/SeccionDos/SeccionDos.js
 
 
