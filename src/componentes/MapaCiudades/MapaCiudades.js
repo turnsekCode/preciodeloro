@@ -211,7 +211,7 @@ const MapaCiudades = ({ markers, ciudad }) => {
                     </a>
                     <a
                       title="Cómo llegar"
-                      href={`https://quickgold.es${showInfo?.url}`}
+                      href={`${showInfo?.url}`}
                       rel="noreferrer"
                       className={styles.boton_popUp}
                     >

@@ -322,7 +322,7 @@ const MapaCiudades = ({ markers , ciudad  })=>{
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                 title: "C\xf3mo llegar",
-                                                href: `https://quickgold.es${showInfo?.url}`,
+                                                href: `${showInfo?.url}`,
                                                 rel: "noreferrer",
                                                 className: (mapaCiudades_module_default()).boton_popUp,
                                                 children: "Web"
