@@ -181,11 +181,11 @@ const CalculadoraOro = ({ ciudad }) => {
       </div>
       <p className={styles.promocion}>Promoción Online</p>
       <a
-       title={`Llamar a Quickgold ${ciudad?.acf?.ciudad_landing}`}
+        title={`Llamar a Quickgold ${ciudad?.acf?.ciudad_landing}`}
         className={styles.botonLlamarTienda}
         href={`tel:${ciudad?.acf?.telefono}`}
       >
-        LLAMA GRATIS
+        LLAMA AL {ciudad?.acf?.telefono}
       </a>
     </div>
   );

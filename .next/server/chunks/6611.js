@@ -526,11 +526,14 @@ const CalculadoraOro = ({ ciudad  })=>{
                 className: (conversor_module_default()).promocion,
                 children: "Promoci\xf3n Online"
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                 title: `Llamar a Quickgold ${ciudad?.acf?.ciudad_landing}`,
                 className: (conversor_module_default()).botonLlamarTienda,
                 href: `tel:${ciudad?.acf?.telefono}`,
-                children: "LLAMA GRATIS"
+                children: [
+                    "LLAMA AL ",
+                    ciudad?.acf?.telefono
+                ]
             })
         ]
     });
@@ -834,11 +837,14 @@ const BloquePrecioPlata_CalculadoraOro = ({ ciudad  })=>{
                 className: (conversor_module_default()).promocion,
                 children: "Promoci\xf3n Online"
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                 title: `Llamar a Quickgold ${ciudad?.acf?.ciudad_landing}`,
                 className: (conversor_module_default()).botonLlamarTienda,
                 href: `tel:${ciudad?.acf?.telefono}`,
-                children: "LLAMA GRATIS"
+                children: [
+                    "LLAMA AL ",
+                    ciudad?.acf?.telefono
+                ]
             })
         ]
     });
@@ -1048,10 +1054,13 @@ function Empenos({ ciudad  }) {
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: (BloqueInfo_conversor_module_default()).contenedorBotonLlamar,
-                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                     className: (BloqueInfo_conversor_module_default()).botonLlamarTienda,
                     href: `tel:${telefono}`,
-                    children: "LLAMA GRATIS"
+                    children: [
+                        "LLAMA AL ",
+                        telefono
+                    ]
                 })
             })
         ]
@@ -1558,9 +1567,12 @@ var botonLlamarFijo_module_default = /*#__PURE__*/__webpack_require__.n(botonLla
 const BotonLlamarFijo = ({ ciudad  })=>{
     return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: (botonLlamarFijo_module_default()).contenedorBotonFijo,
-        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
             href: `tel:${ciudad?.acf?.telefono}`,
-            children: "LLAMA GRATIS"
+            children: [
+                "LLAMA AL ",
+                ciudad?.acf?.telefono
+            ]
         })
     });
 };

@@ -127,7 +127,7 @@ export default function Empenos({ ciudad }) {
       </div>
       <div className={styles.contenedorBotonLlamar}>
         <a className={styles.botonLlamarTienda} href={`tel:${telefono}`}>
-          LLAMA GRATIS
+          LLAMA AL {telefono}
         </a>
       </div>
     </>
